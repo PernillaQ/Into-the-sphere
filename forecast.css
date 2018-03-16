@@ -1,0 +1,165 @@
+body
+{  
+  background-color: #000000;
+	font-family: 'Montserrat', sans-serif;
+   text-transform: uppercase;
+	line-height: 1em;
+	color: gray;
+	/*text-shadow: 0.08em 0.08em 0.8em #000000;*/
+	text-align: center;
+	margin:0 auto;
+}
+*
+{
+    box-sizing: border-box;
+}
+.weather-wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.weather-content
+{   
+    width: 55%;
+    background: radial-gradient(#000000,  #0e1213, #000000, #000000);
+    margin-bottom: 2em;
+    margin-top: 1em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border:0.5px solid gray;
+}
+.todaysWeather
+{
+    background: radial-gradient(#000000, #13181a, #000000, #000000);
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+     border: 0.75px solid #000000;
+}
+h1
+{
+    width: 25%;
+    color: #dcd0c0;
+    font-weight: normal;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+h3
+{
+    color: #f4f4f4;
+    text-transform: uppercase; 
+    letter-spacing: 0.1em;
+    border-bottom: 0.5px solid gray;   
+    margin-bottom: 0.8em;
+    width: 40%;
+    font-size: 1.3em;
+    font-weight: lighter;
+    align-self: center;
+}
+h4
+{
+    font-family: "Lora";
+    color: gray;
+    letter-spacing: 0.05em;
+    font-size: 1em;
+    font-weight: normal;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+h5
+{
+    color: #dcd0c0;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    font-weight:lighter;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+p
+{
+  font-family: "Lora";
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    align-self: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1em;    
+    width: 70%;
+}
+
+.time
+{
+    font-size: 0.7em;
+    margin-top: 0em;
+    margin-bottom: 1em;
+}
+ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top:2.5em;
+    padding-left: 0em;
+}
+ul img
+{
+  width: 40%;
+}
+li
+{ 
+    width: 100%; 
+    display: inline-flex;
+    flex-direction: column;
+}
+li:nth-child(1)
+{
+  border:none;
+}
+li p 
+{
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+/*li p:nth-child(1)
+{
+  font-size: 0.9em;
+}*/
+img
+{
+    align-self: center;
+    width: 10%;
+}
