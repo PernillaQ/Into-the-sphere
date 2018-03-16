@@ -2,7 +2,7 @@ GetData();
 
 async function GetData()
 {
-      let weatherResponse = await fetchData("http://api.openweathermap.org/data/2.5/weather?q=Stockholm,se&units=metric&APPID=58184a606daa30dd317db1e66a56a2d8");
+      let weatherResponse = await fetchData("https://api.openweathermap.org/data/2.5/weather?q=Stockholm,se&units=metric&APPID=58184a606daa30dd317db1e66a56a2d8");
       let weather = JSON.parse(weatherResponse);
 
       document.getElementById("time").innerHTML = new Date().toLocaleString();
@@ -56,7 +56,7 @@ GetMoreData();
 
 async function GetMoreData()
 {
-      let weatherResponse2 = await fetchData("http://api.openweathermap.org/data/2.5/forecast?q=Stockholm,se&units=metric&APPID=58184a606daa30dd317db1e66a56a2d8");
+      let weatherResponse2 = await fetchData("https://api.openweathermap.org/data/2.5/forecast?q=Stockholm,se&units=metric&APPID=58184a606daa30dd317db1e66a56a2d8");
       let weather2 = JSON.parse(weatherResponse2);
     
       let list2 = document.createElement("ul");
